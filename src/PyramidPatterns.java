@@ -4,7 +4,8 @@ public class PyramidPatterns {
         System.out.println("""
                             +--------------+
                             | Half Pyramid |
-                            +--------------+""");
+                            +--------------+
+                            """);
         halfPyramid(5);
 
     }
