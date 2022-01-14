@@ -14,6 +14,12 @@ public class PyramidPatterns {
                             +-----------------------+""");
         invertedHalfPyramid(length);
 
+        System.out.println("""
+                            +-----------------------+
+                            |  Right Half Pyramid   |
+                            +-----------------------+""");
+        rightHalfPyramid(length);
+
     }
 
     public static void halfPyramid(int length) {
@@ -26,6 +32,16 @@ public class PyramidPatterns {
 
     public static void invertedHalfPyramid(int length) {
         for(int i=length; i>=1; i--){
+            for (int j=1; j<=i; j++)
+                System.out.print("* ");
+            System.out.println();
+        }
+    }
+
+    public static void rightHalfPyramid(int length) {
+        for(int i=1; i<=length; i++){
+            for (int space=1; space<=(length-i) * 2; space++)
+                System.out.print(" ");
             for (int j=1; j<=i; j++)
                 System.out.print("* ");
             System.out.println();
